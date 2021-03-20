@@ -40,14 +40,12 @@ NSString * const UIDKey = @"deviceUID";
 
 /*! Returns the Device UID.
     The UID is obtained in a chain of fallbacks:
-      - Keychain
       - NSUserDefaults
       - Apple IFV (Identifier for Vendor)
       - Generate a random UUID if everything else is unavailable
     At last, the UID is persisted if needed to.
  */
 - (NSString *)uid {
-    if (!_uid) _uid = [[self class] valueForKeychainKey:UIDKey service:UIDKey];
     if (!_uid) _uid = [[self class] valueForUserDefaultsKey:UIDKey];
     if (!_uid) _uid = [[self class] appleIFV];
     if (!_uid) _uid = [[self class] randomUUID];

@@ -1,7 +1,7 @@
 {
-  "name": "react-native-device-info",
-  "version": "8.0.6",
-  "description": "Get device information using react-native",
+  "name": "rn-device-info-ht",
+  "version": "1.0.0",
+  "description": "Get device information using react-native custom for Happy Time project",
   "react-native": "src/index.ts",
   "types": "lib/typescript/index.d.ts",
   "main": "lib/commonjs/index.js",
@@ -22,9 +22,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-device-info/react-native-device-info"
+    "url": "https://github.com/xuho/react-native-device-info"
   },
-  "homepage": "https://github.com/react-native-device-info/react-native-device-info#readme",
+  "homepage": "https://github.com/xuho/react-native-device-info#readme",
   "scripts": {
     "analyze": "yarn ts-check && yarn flow-check",
     "flow-check": "npx flow-bin check-contents < src/index.js.flow",
