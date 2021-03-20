@@ -28,13 +28,13 @@ Your iOS Podfile will need to move to an iOS 10 minimum. v7 of this module no lo
 Using npm:
 
 ```shell
-npm install --save react-native-device-info
+npm install --save rn-device-info-ht
 ```
 
 or using yarn:
 
 ```shell
-yarn add react-native-device-info
+yarn add rn-device-info-ht
 ```
 
 ## AndroidX Support
@@ -83,11 +83,11 @@ Previous versions need to do manual linking. No support is offered for these pre
 ## Usage
 
 ```js
-import DeviceInfo from 'react-native-device-info';
+import DeviceInfo from 'rn-device-info-ht';
 
 // or ES6+ destructured imports
 
-import { getUniqueId, getManufacturer } from 'react-native-device-info';
+import { getUniqueId, getManufacturer } from 'rn-device-info-ht';
 ```
 
 ## API
